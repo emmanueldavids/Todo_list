@@ -27,7 +27,7 @@ public class User {
     private String description;
     
     @Column(name = "Completed")
-    private float completed;
+    private boolean completed;
    
 
     public User(){
@@ -66,12 +66,12 @@ public class User {
     }
 
 
-    public float getCompleted() {
+    public boolean getCompleted() {
         return completed;
     }
 
 
-    public void setCompleted(float completed) {
+    public void setCompleted(boolean completed) {
         this.completed = completed;
     }
 
