@@ -82,6 +82,16 @@ public class User {
         return "User [id=" + id + ", title=" + title + ", description=" + description + ", completed=" + completed
                 + "]";
     }
+
+
+    public User(int id, String title, String description, boolean completed) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.completed = completed;
+    }
+
+    
     
 
     
