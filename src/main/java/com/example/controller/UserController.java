@@ -12,15 +12,13 @@ import com.example.Repo.UserRepo;
 
 
 
-
-
 @RestController
 public class UserController {
     @Autowired
     UserRepo repo;
     
     //Get method 2x
-    @GetMapping("/api/todo")    
+    @GetMapping("/")    
     public List<User> getAllUser(){
         List<User> user = repo.findAll();
         return user;
@@ -37,7 +35,6 @@ public class UserController {
     //Post method
     @PostMapping("/api/add")
     public void createUser(@RequestBody User user) {
-        //TODO: process POST request
         repo.save(user);
         
         // return entity;
